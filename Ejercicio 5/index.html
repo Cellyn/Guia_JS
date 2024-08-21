@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Coches</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Tienda de coches</h1>
+    <form id="formularioDescuento" onsubmit="calcularDescuento(event)">
+        <label for="modelo">Selecciona el modelo de coche: </label>
+        <select id="modelo" name="modelo">
+            <option value="">Seleccionar modelo</option>
+            <option value="Ford Fiesta">Ford Fiesta</option>
+            <option value="Ford Focus">Ford Focus</option>
+            <option value="Ford Escape">Ford Escape</option>
+        </select>
+        <button type="submit">Calcular Descuento</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
